@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>HTML 5 - Multimedia</title>
+    </head>
+    <body border="4" cellspacing="0" cellpadding="5" align="center" width="800">
+        <h2 align="center">ABOUT CAT</h2>
+        <p align="center">
+        <button type="button" onclick="playVid()">Play Button</button>
+        <button type="button" onclick="pauseVid()">Pause Video</button>
+        <button type="button" onclick="Duration()">Duration</button>
+        <button type="button" onclick="controlOn()">Control ON</button>
+        <button type="button" onclick="controlOff()">Control OFF</button>
+        </p>
+        <p align="center">
+            <video width="420" id="myVideo">
+                <source src="media/video.mp4" type="video/mp4">
+            </video>
+        </p>
+        <p align="center">
+        <button type="button" onclick="getVolume()">What is the volume?</button>
+        <button type="button" onclick="setHalfVolume()">Set volume to 0.2</button>
+        <button type="button" onclick="setFullVolume()">Set volume to 3.0</button>
+        </p>
+        <h2 class="bg-dark text-light" align="center">
+            CAT
+        </h2>
+        <p class="bg-dark text-light sticky-top" align="center">
+            Cats, also called domestic cats (felis catus), are small, carnivorus mammals, of the family Falidae. Domestic cats are often called 'hourse cats' when kept as indoor pets. Cats have been domisticated (tamed) for nearly 10.000 years. They are one of the most popular pets in the world. They are kept by humans for hunting rodents and as friends.
+            There also farm cats, which are kept on farms to keep rodents away, and ferral cats, which are domestic cats that live away from humans.
+            A cat is sometimes called a kitty. A young cad is called a kitten. A famale cat that has not had its sex organs removed is called a'tom.
+            There are about 92 breeds of chat. Domestic cats are found in shorthair, longhair, and hairless breeds. Cats which are not specific breeds can be referred to as 'domestic shorthair' (DSH) or 'domstic longhair' (DLH).
+            The word 'cat' is also used for other felines. Falines are usually called either big cats or small cats. The big, wild cats are well known: lions, tigers, leopards, jaguars, pumas, and cheetahs. There are small wild cats in most parts of the world, such as the linx in northem europe. The big cats and wild cats are not tame, and can be very dangerous.
+        </p>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+function playVid() {
+    vid.play();
+    vid.loop = true;
+}
+
+function pauseVid() {
+    vid.pause();
+} 
+
+function Duration() {
+    alert(vid.duration);
+}
+
+function controlOn() {
+    vid.controls = true;
+    vid.load();
+}
+
+function controlOff() {
+    vid.controls = false;
+    vid.load();
+}
+
+function getVolume() { 
+    alert(vid.volume);
+} 
+
+function setHalfVolume() {
+    vid.volume = "0.2";
+}
+  
+function setFullVolume() {
+    vid.volume = "1.0";
+}
+
+    </script>
+
+</html>

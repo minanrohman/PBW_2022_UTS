@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELAJAR HTML</title>
+</head>
+<body>
+    <h1> SMA 1 MANOK KARI </h1>
+    <form name="PPDB SMA 1 China" menthod="post" action="proses.php">
+        <table width="50%"> 
+            <tr>
+                <td>NIK</td>
+                <td><input type="number" name="fnim" required></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="fname"required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="ftgllhr" required></td>
+            </tr>
+            <tr>
+                <td> Jurusan </td>
+                <td>
+                    <select name="fprodi" required>
+                    <option> MIPA </option>
+                    <option> IPS </option>   
+                    <option> Sastra </option> 
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Jalur Yang Diambil</td>
+                <td>
+                    <input type="checkbox"><label> Zonasi </label>
+                    <input type="checkbox"><label> Prestasi </label>
+                    <input type="checkbox"><label> Perpindahan ortu </label>
+            </td>
+            </tr>
+            <tr>
+                <td>Pas Photo</td>
+                <td>
+                    <input type="file" required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
